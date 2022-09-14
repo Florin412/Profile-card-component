@@ -1,0 +1,24 @@
+@use "variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex; // Layout.
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: "Kumbh Sans", sans-serif;
+
+  //   Background Layout.
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-color: $dark-cyan;
+}

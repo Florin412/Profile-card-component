@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-color: hsl(185deg, 75%, 39%);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(auto, 350px));
+  margin: 3rem 1.5rem;
+}
+.card-container .img-section {
+  width: 100%;
+  height: 100%;
+}
+.card-container .img-section .bg-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.card-container .content-section {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0 0 1rem 1rem;
+  color: hsl(0deg, 0%, 59%);
+}
+.card-container .content-section .bold {
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(229deg, 23%, 23%);
+}
+.card-container .content-section .avatar-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-container .content-section .avatar-box .avatar-picture {
+  border-radius: 50%;
+  border: 5px solid hsl(0deg, 0%, 100%);
+  margin-top: -3.5rem;
+}
+.card-container .content-section .avatar-box .name {
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.card-container .content-section .avatar-box .age {
+  font-weight: 400;
+  color: hsl(227deg, 10%, 46%);
+}
+.card-container .content-section .avatar-box .city {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  color: hsl(227deg, 10%, 46%);
+}
+.card-container .content-section .stats-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  border-top: 1px solid hsl(0deg, 0%, 90%);
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+.card-container .content-section .stats-box .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
